@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace lesson6
+namespace lesson6// new brench
 {
     class Program
     {
