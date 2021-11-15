@@ -6,9 +6,7 @@ namespace lesson6
     {
         static void Main(string[] args)
         {
-            // new lesson6
          
         }
     }
 }
-//6.1
