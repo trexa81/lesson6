@@ -16,7 +16,6 @@ namespace lesson6// new brench
             Console.WriteLine("Введите Id процесса или его имя для его завершения");
 
             int number;
-            Console.WriteLine("Введите строку:");
             string input = Console.ReadLine();
             
             bool result = int.TryParse(input, out number);
@@ -33,25 +32,11 @@ namespace lesson6// new brench
 
                 foreach (var killName in Process.GetProcessesByName(input))
                 {
-                    Console.WriteLine($"Для завершения процесса: " + number + " нажмите любую кнопку.");
+                    Console.WriteLine($"Для завершения процесса: " + input + " нажмите любую кнопку.");
                     Console.ReadKey();
                     killName.Kill();
                 }
-                Console.WriteLine($"Преобразование завершилось неудачно" + input);
             }
-
-            //var concoleReadLine = Console.ReadLine();
-            //Console.WriteLine(killID);
-            //Console.WriteLine("Введите имя процесса для его завершения");
-            //var concoleReadLine2 = Console.ReadLine();
-            //foreach (var killName in Process.GetProcessesByName(concoleReadLine2))
-            //{
-            //    Console.WriteLine(killName);
-            //    Console.ReadKey();
-            //    killName.Kill();
-            //}
-            //killName.Kill();
-            //Console.ReadKey();
         }
     }
 }
